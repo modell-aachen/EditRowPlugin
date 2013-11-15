@@ -1,0 +1,68 @@
+/* Hide nasty dotted borders on moz; jquery-ui breaks them */
+.erpJS_submit:focus { outline: none; }
+.erpJS_submit::-moz-focus-inner { outline: none; }
+
+.erpJS_sort {
+    text-decoration: underline;
+}
+
+.ui-icon-quietsave {
+    background-image: url("quiet.png");
+}
+
+/* An empty cell has to have width and height to be able to act as a click-target */
+.erp_empty {
+    height: 1.5em;
+    width: 6em;
+}
+
+.erpJS_container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.erpJS_editButton {
+    position: absolute;
+    left: -0.5em;
+    top: -0.2em;
+    height: 8px;
+    width: 8px;
+    background: url(editbutton.png) no-repeat transparent;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.erp_clock_button {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    height: 20px;
+    width: 20px;
+    background: url(clock.gif) no-repeat transparent;
+    z-index: 100;
+    cursor: wait;
+}
+
+.erp_drag_button {
+    position: absolute;
+    display: none;
+    left: -1.7em;
+    top: -1.25em;
+}
+
+a.erp_drag_button:hover {
+    background-color: #FEE;
+    position: absolute;
+    display: block;
+    left: -1.7em;
+    top: -1.25em;
+}
+
+.erpNoJS_button {
+    display: inline-block;
+    padding: 0;
+    margin: 0 5px;
+    border: none;
+    width: 16px;
+}
